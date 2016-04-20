@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0">
+
+	<meta charset="utf-8">
+	<title>My API maps</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+	<div id='menu'>
+		<div id='logo'></div>
+		<div id='search'>
+			<div id='btnpos'>
+				<button id='mypos'>My position</button>
+			</div>
+			<form action="#" method="get" name="direction" id="direction">
+				<div id='ori'>
+					<label id='ori_lab'>Point de départ :</label>
+					<input type="text" class='controls' name="origin" id="origin">
+				</div>
+				<div id='des'>
+					<label id='destination_lab'>Destination :</label>
+					<input type="text" class='controls' name="destination" id="destination">
+				</div>
+				<div id='submit'>
+					<input id='valid_submit' type="submit" value="Calculer l'itinéraire">
+				</div>
+			</form>
+		</div>	
+		<div id="panel"></div>
+
+	</div>		
+
+	<div id="backmap">
+
+		<div id='map'></div>
+		
+
+	</div>
+<script type="text/javascript" src='js/function.js'></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTQD0i0S8zRT6TnE9jltIpUCWxTVIYWfI&libraries=visualization,places,geometry&callback=initMap">
+</script>
+
+
+<script type="text/javascript" src='https://code.jquery.com/jquery-1.12.1.min.js'></script>
+</body>
+
+</html>
